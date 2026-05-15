@@ -38,3 +38,9 @@ Servo motor connections:
 ![Schematic Diagram](Images/Schematics.png)
 
 ![Circuit Diagram](Images/Circuit.jpeg)
+
+**Dashboard**
+
+The logs of the IoT system is forwarded to Node-RED visual programming via MQTT protocol. Node-RED forwards the logs to InfluxDB. InfluxDB parses and stores the logs along with authentication status (successful authentication and failed authentication), timestamp and name of the authenticated user. The logs are passed to Grafana for visualizatiions in dashboard.
+
+![Dashboard](Images/Grafana.png)
